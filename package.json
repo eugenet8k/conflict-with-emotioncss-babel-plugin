@@ -1,0 +1,27 @@
+{
+  "name": "conflict-with-emotioncss-babel-plugin",
+  "version": "1.0.0",
+  "description": "https://github.com/robertknight/babel-plugin-mockable-imports/issues/34",
+  "scripts": {
+    "build:babel": "NODE_ENV=development babel src -d dist/babel",
+    "build:webpack": "NODE_ENV=development webpack --config ./webpack.config.js",
+    "start:babel": "node dist/babel/index.js",
+    "start:webpack": "node dist/webpack/main.js"
+  },
+  "dependencies": {
+    "@emotion/babel-plugin": "11.2.0",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-mockable-imports": "1.7.1",
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0"
+  }
+}
